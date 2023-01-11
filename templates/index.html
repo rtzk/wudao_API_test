@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的寒假作业</title>
+<div>
+    <form action="/" method="post">
+        <p><input type="prompt" name="prompt" placeholder="请输入你的问提？" value={{prompt}}></p >
+        <p><input type="submit" value="提交"></p >
+        <textarea name="textarea" id="textarea" style='overflow-y: hidden;height:20px' onpropertychange="this.style.height = this.scrollHeight + 'px';" οninput="this.style.height = this.scrollHeight + 'px';">
+                {{textarea}}
+        </textarea>
+        <script>
+        //拿到TextArea的DOM
+        var textarea=document.getElementById('textarea');
+        //设置高度
+        textarea.style.height = textarea.scrollHeight + 'px';
+        </script>
+    </form>
+</div>
+</head>
+<body>
+
+</body>
+</html>
